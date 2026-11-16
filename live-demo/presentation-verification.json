@@ -39,5 +39,12 @@
       720
     ]
   ],
-  "timing_regression": "1x passes 10s, reaches 600s and retains final frame"
+  "timing_regression": "1x passes 10s, reaches 600s and retains final frame",
+  "scenario_switching_autoresume": {
+    "playing_switches_tested_in_browser": 7,
+    "paused_switch_retained": true,
+    "resumed_clock_observed": "01:03",
+    "new_console_errors_after_final_fix": 0,
+    "stale_animation_timestamp_regression": true
+  }
 }

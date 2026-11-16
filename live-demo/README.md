@@ -26,4 +26,4 @@ Run `python check_presentation.py` to check the prepared assets, all six recordi
 
 2026-11-16 — Added a prepared presentation mode with 48 exact report cells, six scenarios, two named experiments, illustrative road animation and archived model decision examples. The default launcher opens this standard-library mode, and the live simulation remains available through `-Live`.
 
-2026-11-17 — Replaced the illustrative two-minute animation with six ten-minute recordings of actual four-controller SUMO runs, including changing metrics and decision inputs. Restored full-network navigation, added enlarged maps and retained the final playback frame until an explicit restart.
+2026-11-17 — Replaced the illustrative two-minute animation with six ten-minute recordings of actual four-controller SUMO runs, including changing metrics and decision inputs. Restored full-network navigation, added enlarged maps and retained the final playback frame until an explicit restart. Active playback now resumes automatically after a scenario switch, with a guard against stale animation timestamps.

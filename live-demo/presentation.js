@@ -47,7 +47,7 @@ function reset() {
 }
 
 function frameIndex() {
-  return Math.min(recording.frames.length - 1, Math.floor(elapsed));
+  return Math.min(recording.frames.length - 1, Math.max(0, Math.floor(elapsed)));
 }
 
 function currentFrame() {
@@ -99,6 +99,7 @@ function renderComparison() {
 }
 
 async function loadRecording() {
+  const resumePlayback = playing;
   playing = false;
   recording = null;
   document.getElementById("status").textContent = "טוען הרצה מוקלטת";
@@ -128,6 +129,8 @@ async function loadRecording() {
       recordingCache.set(key, loaded);
     }
     recording = recordingCache.get(key);
+    playing = resumePlayback;
+    lastFrame = performance.now();
     reset();
     for (const item of [play, scenarioSelect, document.getElementById("seek"), document.getElementById("restart")]) item.disabled = false;
   } catch (error) {
@@ -348,7 +351,7 @@ document.getElementById("speed").addEventListener("change", event => {
 document.addEventListener("visibilitychange", () => { lastFrame = performance.now(); });
 
 function frame(now) {
-  if (playing && !document.hidden) elapsed = Math.min(600, elapsed + (now - lastFrame) / 1000 * Number(document.getElementById("speed").value));
+  if (playing && !document.hidden) elapsed = Math.min(600, elapsed + Math.max(0, now - lastFrame) / 1000 * Number(document.getElementById("speed").value));
   lastFrame = now;
   if (playing) {
     order.forEach(drawMap);

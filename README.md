@@ -72,4 +72,4 @@ The report-reference column displays 48 exact waiting-time cells from v23 tables
 
 2026-11-16 — Added the packaged four-controller SUMO browser demonstration with twelve trained inference checkpoints and seed-201 demand files. Included Windows setup, supervised launch, decision history, end-of-green measurements and verification evidence.
 
-2026-11-17 — Made ten-minute recorded SUMO playback the default demo, with six scenarios, four controllers, changing metrics and actual model decision inputs. Restored full-network views, added enlarged maps and retained 48 exact report values in a separate reference column.
+2026-11-17 — Made ten-minute recorded SUMO playback the default demo, with six scenarios, four controllers, changing metrics and actual model decision inputs. Restored full-network views, added enlarged maps and retained 48 exact report values in a separate reference column. Fixed scenario switching to resume active playback automatically and guarded the animation clock during loading.
