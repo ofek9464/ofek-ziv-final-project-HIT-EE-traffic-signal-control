@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIT Traffic Lab · השוואת בקרים</title>
+  <link rel="stylesheet" href="/live.css">
+  <script src="/live.js" defer></script>
+</head>
+<body data-view="presentation">
+<main class="page">
+  <section class="topbar">
+    <div class="identity"><div class="brand" dir="ltr">HIT / TRAFFIC LAB</div><h1>השוואת בקרים בזמן אמת</h1><p id="scenario-description">אותו תרחיש · ארבעה בקרים</p></div>
+  <nav class="controls" aria-label="בקרת הדמו">
+    <button id="play" type="button" class="primary" disabled>התחל הדגמה</button>
+    <label>תרחיש <select id="scenario" disabled></select></label>
+    <label>צומת <select id="junction"><option value="B1">J1</option><option value="C1">J2</option></select></label>
+    <button id="zoom" type="button" aria-pressed="true">הצג רשת מלאה</button>
+    <button id="restart" type="button" disabled>התחל מחדש</button>
+    <button id="inspect" type="button" aria-pressed="false">ניתוח החלטה</button>
+  </nav>
+    <div class="runtime"><div class="clock"><span id="status" role="status" aria-live="polite">טוען</span><strong id="time" dir="ltr">00:00</strong></div><span id="source" dir="ltr">טוען את הסימולציה…</span></div>
+  </section>
+  <p class="presentation-guide" id="presentation-guide">בחרו תרחיש ולחצו ״התחל הדגמה״. ארבעת הבקרים יפעלו ויחליטו אוטומטית.</p>
+  <p id="error" role="alert" hidden></p>
+  <section id="models" class="models" aria-label="מפות חיות של DQN, A2C, TIMER ו־SCRIPT"></section>
+  <section class="comparison" aria-label="השוואת TIMER, SCRIPT, DQN ו־A2C">
+    <div class="section-title"><h2>השוואת ארבעת הבקרים</h2><span id="comparison-scenario"></span></div>
+    <div class="comparison-grid">
+      <div class="table-wrap">
+        <table class="comparison-table">
+          <thead><tr><th>בקר</th><th>המתנה ממוצעת</th><th>נסיעות שהושלמו</th><th>תור נוכחי</th><th>לעומת TIMER</th></tr></thead>
+          <tbody id="comparison-rows"></tbody>
+        </table>
+        <p class="footnote" id="metric-note">פחות המתנה = טוב יותר · נסיעות שהושלמו בלבד · התור בשני הצמתים · מדדי ביניים בריצה</p>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-heading"><h3>המתנה ממוצעת לאורך הריצה</h3><div class="chart-legend" dir="ltr"><span class="timer">TIMER</span><span class="script">SCRIPT</span><span class="dqn">DQN</span><span class="a2c">A2C</span></div></div>
+        <canvas id="comparison-chart" role="img" aria-label="גרף השוואת המתנה ממוצעת בשניות לאורך זמן הסימולציה, עבור ארבעת הבקרים"></canvas>
+      </div>
+    </div>
+  </section>
+</main>
+<dialog id="decision-dialog" aria-labelledby="detail-title">
+  <div class="dialog-heading"><h2 id="detail-title">הסבר החלטה</h2><button id="close-details" type="button">חזרה להדגמה</button></div>
+  <p id="detail-status" role="status"></p>
+  <div class="decision-controls"><label>החלטה שמורה <select id="decision-history"></select></label><button id="finish-decision" type="button" class="primary">הצג תוצאה בסוף הירוק</button></div>
+  <div id="detail-content"></div>
+</dialog>
+</body>
+</html>

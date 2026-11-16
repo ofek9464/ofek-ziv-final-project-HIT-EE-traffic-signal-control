@@ -1,0 +1,73 @@
+{
+  "real_sumo_integration": {
+    "scenario": "Heavy west",
+    "seconds": 1200,
+    "passed": true,
+    "checks": [
+      "17 actual model inputs",
+      "network outputs and selected/applied actions",
+      "directional queues",
+      "end-of-green timestamps and queues",
+      "completed-trip waiting time against SUMO XML"
+    ]
+  },
+  "recovery": {
+    "simulation_failure_regression": "passed in check_web_demo.py",
+    "server_process_restart": "passed via Start-Web-Demo.ps1 supervisor",
+    "client_controls_after_reconnect": "enabled and usable"
+  },
+  "controls": {
+    "all_seven_scenarios": "passed",
+    "finish_selected_decision": "same input and action retained through end of applied green",
+    "concurrent_api_requests": 200,
+    "completion_and_new_run": "passed"
+  },
+  "ui": {
+    "desktop_css_sizes": [
+      [
+        1280,
+        720
+      ],
+      [
+        1366,
+        768
+      ],
+      [
+        1707,
+        870
+      ]
+    ],
+    "page_overflow": false,
+    "keyboard_focus_retained": true,
+    "viewport_override_reset": true,
+    "screenshots": [
+      "demo-fixed-main.jpg",
+      "demo-fixed-decision.jpg"
+    ]
+  },
+  "soak": {
+    "seconds": 180.0,
+    "samples": 180,
+    "failures": 0,
+    "max_response_ms": 32.00000000651926,
+    "motion_updates": {
+      "TIMER": 180,
+      "SCRIPT": 180,
+      "DQN": 180,
+      "A2C": 180
+    },
+    "graph_updates": 139,
+    "passed": true
+  },
+  "policy_investigation": {
+    "report": "policy-diagnosis.md",
+    "direct_network_probe": "policy-diagnosis.json",
+    "live_action_distribution": "presentation-action-distribution.json",
+    "trained_checkpoints_used": true,
+    "heavy_west_greedy_preferences": {
+      "DQN": 20,
+      "A2C": 30
+    },
+    "causal_training_ablation": "requires retraining and held-out validation"
+  }
+}

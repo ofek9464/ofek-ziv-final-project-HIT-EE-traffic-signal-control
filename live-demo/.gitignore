@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.log
+sim/results/
+!sim/models/
+!sim/models/*_ms_weights.pt

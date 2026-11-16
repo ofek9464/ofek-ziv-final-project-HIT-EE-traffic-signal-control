@@ -36,7 +36,7 @@ python sim/run_experiment.py --mode timer --scenario day_cycle
 python sim/run_experiment.py --mode script --scenario day_cycle
 ```
 
-These commands use the included unseeded demand inputs and write generated outputs under `sim/results/`. Learned-controller evaluation additionally requires the corresponding weight files in the location expected by the source. Weight files and full raw simulation outputs are not included in this code repository.
+These commands use the included unseeded demand inputs and write generated outputs under `sim/results/`. Learned-controller evaluation additionally requires the corresponding weight files in the location expected by the source. The original `sim/` source snapshot omits weight files and full raw simulation outputs. The packaged demonstration under `live-demo/` includes its inference checkpoints and seed-201 demand files.
 
 The original training interfaces can be inspected without starting training:
 
@@ -60,3 +60,14 @@ Results, checkpoints and raw evidence were archived separately in the [project r
 ## Verification
 
 Before publication, copied source hashes were checked, the source archive passed CRC and content-hash checks, and every published Python file was parsed for syntax. No new training or simulation was launched as part of publication. The inventory files allow readers to check the exact source files; they do not certify model quality or resolve documented experimental limitations.
+
+
+## Packaged live demonstration
+
+The [live demonstration](live-demo/README.md) contains the browser UI, four real SUMO controllers, trained inference checkpoints, seed-201 demand inputs, Windows setup and supervised launch scripts. Extract the release ZIP, follow its setup steps and run `Start-Web-Demo.cmd`. The live-demo runtime is self-contained under `live-demo/sim/`; the original root `sim/` source snapshot remains the published campaign source.
+
+The demo exposes actual model inputs, network scores, chosen and applied green durations, and directional queue measurements at the end of a selected green. The Heavy west checkpoints have constant greedy preferences in the tested rollout, as documented in the included policy investigation.
+
+## Patch notes
+
+2026-11-16 — Added the packaged four-controller SUMO browser demonstration with twelve trained inference checkpoints and seed-201 demand files. Included Windows setup, supervised launch, decision history, end-of-green measurements and verification evidence.

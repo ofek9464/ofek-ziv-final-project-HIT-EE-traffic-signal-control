@@ -1,0 +1,79 @@
+{
+  "DQN": {
+    "weight_file": "sim/models/dqn_heavy_west_ms_weights.pt",
+    "synthetic_probe_outside_live_distribution": {
+      "20": 4096,
+      "30": 0,
+      "40": 0,
+      "50": 0,
+      "60": 0
+    },
+    "output_ranges": [
+      [
+        -656624.5625,
+        -226174.296875
+      ],
+      [
+        -707915.5,
+        -245097.921875
+      ],
+      [
+        -738948.5625,
+        -256269.8125
+      ],
+      [
+        -812821.6875,
+        -282301.53125
+      ],
+      [
+        -879946.4375,
+        -305841.3125
+      ]
+    ],
+    "training_episodes": 1000,
+    "best_logged_episode": {
+      "episode": "702",
+      "total_reward": "-379267.0",
+      "avg_reward_per_decision": "-3241.5983",
+      "epsilon": "0.1213"
+    }
+  },
+  "A2C": {
+    "weight_file": "sim/models/a2c_heavy_west_ms_weights.pt",
+    "synthetic_probe_outside_live_distribution": {
+      "20": 0,
+      "30": 4096,
+      "40": 0,
+      "50": 0,
+      "60": 0
+    },
+    "output_ranges": [
+      [
+        1.4203779755916912e-05,
+        0.015552137978374958
+      ],
+      [
+        0.9843583106994629,
+        0.9999858140945435
+      ],
+      [
+        1.7614445058794503e-12,
+        4.5774810132570565e-05
+      ],
+      [
+        1.3026908272188438e-15,
+        3.699778744703508e-06
+      ],
+      [
+        1.0074343703009303e-12,
+        4.0034086850937456e-05
+      ]
+    ],
+    "training_episodes": 1000,
+    "best_logged_episode": {
+      "episode": "125",
+      "total_reward": "-495895.0",
+      "loss": "11894559744.0"
+    }
+  }
+}

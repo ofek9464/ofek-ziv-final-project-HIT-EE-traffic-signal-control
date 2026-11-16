@@ -1,0 +1,42 @@
+{
+  "duration_seconds": 180,
+  "samples": 180,
+  "failures": [],
+  "max_response_ms": 32.00000000651926,
+  "max_stall_seconds": 0,
+  "motion_updates": {
+    "TIMER": 180,
+    "SCRIPT": 180,
+    "DQN": 180,
+    "A2C": 180
+  },
+  "metric_updates": {
+    "TIMER": 170,
+    "SCRIPT": 178,
+    "DQN": 179,
+    "A2C": 172
+  },
+  "graph_updates": 139,
+  "examples": {
+    "DQN": {
+      "junction": "B1",
+      "decision_time": 494.0,
+      "west_queue": 33,
+      "chosen": 20,
+      "applied": 20.0,
+      "phase": 3
+    },
+    "A2C": {
+      "junction": "B1",
+      "decision_time": 742.0,
+      "west_queue": 33,
+      "chosen": 30,
+      "applied": 30.0,
+      "phase": 3
+    }
+  },
+  "start_sim_time": 129,
+  "end_sim_time": 820,
+  "observed_seconds": 180.0,
+  "passed": true
+}
