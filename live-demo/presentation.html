@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HIT Traffic Lab · הצגת הפרויקט</title>
+  <link rel="stylesheet" href="/live.css">
+  <link rel="stylesheet" href="/presentation.css">
+  <script src="/presentation.js" defer></script>
+</head>
+<body data-view="presentation">
+<main class="page">
+  <header class="topbar">
+    <div class="identity"><div class="brand" dir="ltr">HIT / TRAFFIC LAB</div><h1>בקרה חכמה ברמזורים</h1><p id="scenario-description">הרצה מוקלטת · SUMO ובקרים אמיתיים · 10 דקות</p></div>
+    <nav class="controls" aria-label="בקרת ההצגה">
+      <button id="play" class="primary" disabled>התחל הצגה</button>
+      <label>תרחיש <select id="scenario" disabled></select></label>
+      <label>ניסוי <select id="experiment" disabled></select></label>
+      <label>צומת <select id="junction"><option value="B1">J1</option><option value="C1">J2</option></select></label>
+      <button id="zoom" aria-pressed="true">הצג רשת מלאה</button>
+      <button id="restart" disabled>מהתחלה</button>
+    </nav>
+    <div class="runtime"><div class="clock"><span id="status" role="status">טוען נתונים</span><strong id="time" dir="ltr">00:00</strong></div><span id="source">הרצה מוקלטת · 10:00 · 1×</span></div>
+  </header>
+  <div class="playback-strip"><p class="presentation-guide" id="presentation-guide">הרכבים, הקלט וההחלטות מתעדכנים מהקלטת SUMO. הטבלה כוללת עמודת ייחוס נפרדת מהספר.</p><label>זמן בהרצה <input id="seek" type="range" min="0" max="600" value="0" step="1" disabled></label><label>מהירות <select id="speed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="10">10×</option></select></label></div>
+  <section id="models" class="models" aria-label="ארבע מפות להמחשת הבקרים"></section>
+  <section class="comparison">
+    <div class="section-title"><h2>השוואת ארבעת הבקרים</h2><span id="comparison-scenario"></span></div>
+    <div class="comparison-grid">
+      <div class="table-wrap"><table class="comparison-table"><thead><tr><th>בקר</th><th>המתנה כעת [ש׳]</th><th>תור כעת</th><th>הושלמו</th><th>תוצאה בספר [ש׳]</th></tr></thead><tbody id="comparison-rows"></tbody></table><p class="footnote" id="metric-note"></p></div>
+      <div class="chart-panel"><div class="chart-heading"><h3>המתנה לאורך ההרצה המוקלטת</h3><div class="chart-legend" dir="ltr"><span class="timer">TIMER</span><span class="script">SCRIPT</span><span class="dqn">DQN</span><span class="a2c">A2C</span></div></div><canvas id="comparison-chart" role="img" aria-label="גרף המתנה מתעדכן מתוך ההרצה המוקלטת"></canvas></div>
+    </div>
+  </section>
+</main>
+<dialog id="decision-dialog" aria-labelledby="detail-title">
+  <div class="dialog-heading"><h2 id="detail-title">החלטה מוקלטת</h2><button id="close-details">חזרה להצגה</button></div>
+  <p class="measurement-note" id="decision-source"></p>
+  <div id="detail-content"></div>
+</dialog>
+<dialog id="map-dialog" aria-labelledby="map-title"><div class="dialog-heading"><h2 id="map-title">רשת מלאה</h2><button id="close-map">סגור מפה</button></div><canvas id="expanded-map" aria-label="מפת הרשת המלאה בהגדלה"></canvas></dialog>
+</body>
+</html>

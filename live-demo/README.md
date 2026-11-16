@@ -1,50 +1,29 @@
-# HIT Traffic live demonstration
+# HIT Traffic project presentation
 
-A local browser demonstration of four independent SUMO runs under the same demand seed. TIMER, SCRIPT, DQN and A2C are shown together with completed-trip waiting time and a comparison graph.
+Run `Start-Web-Demo.cmd` to open the prepared presentation at http://127.0.0.1:8766. This mode requires Python and a browser. Its server uses the Python standard library, and its browser animation uses Canvas.
 
-## Windows setup
+The report column contains waiting-time cells extracted verbatim from `traffic-ai-final-report-v23.docx`. The experiment selector chooses section 4.8.1, table 24, or section 4.1, table 12. The default is the later comparison in section 4.8.1. This column displays final experimental results, with the original printed precision and standard deviations.
 
-1. Extract the ZIP into a writable folder.
-2. Install Python 3.11 or newer with `python` available on PATH.
-3. Install [Eclipse SUMO](https://sumo.dlr.de/docs/Downloads.php). Make `sumo.exe` available on PATH or set `SUMO_HOME` to the installation folder. The launcher also detects the standard Windows installation folders.
-4. Run `Setup-Demo.cmd` once. It downloads CPU PyTorch and the Python dependencies into `.venv`.
-5. Run `Start-Web-Demo.cmd`. The browser opens at `http://127.0.0.1:8765/`.
+Start, pause, restart and scenario selection control ten-minute recorded SUMO runs. Each of the six scenarios contains 601 snapshots from 00:00 through 10:00, with four controllers, vehicle positions, pedestrian positions, signal states, queues, completed-trip waiting metrics and actual model inputs and decisions. Canvas interpolates recorded positions between snapshots. Playback defaults to 1x and holds its final frame until the presenter explicitly restarts. The timeline and speed selector allow navigation during a defense.
 
-The ZIP includes twelve trained checkpoint files, the network, and the twelve route and pedestrian files needed for test seed 201. The initial Python dependency installation requires Internet access. Simulation and inference run locally.
+The table's current metrics and the evolving graph come from the original demo checkpoints on seed 201 during the first ten minutes of each demand. The report column contains the selected full experimental cohort. The interface labels the recording and the report reference separately.
 
-The Windows launcher supervises the server process. A server-process restart starts a new paused simulation. Closing the browser tab leaves the local server available for reopening.
+Use the full-network control to switch all four maps between the selected junction and the complete road grid. Each controller also has an enlarged-map button. DQN and A2C decision explanations show the latest recorded directional input and chosen green duration, together with measured directional queues at the end of that green when it falls within the recording.
 
-## Presenting the project
+## Live simulation setup
 
-Choose a scenario and start the demonstration. All four controllers run automatically. Select J1 or J2 and use the full-grid control when needed.
+For live simulation or recording regeneration, install Eclipse SUMO and run `Setup-Demo.cmd` once to install CPU PyTorch and the Python dependencies into `.venv`. The package includes twelve checkpoint files, road geometry and seed-201 vehicle and pedestrian demand files.
 
-Use the model's decision-explanation button to pause the runs and inspect the actual seventeen inputs and network scores. Select a saved decision, then advance to the end of its applied green to compare directional queues. The measured change includes vehicle arrivals and departures. Closing the explanation resumes a previously running demonstration.
+Run `Start-Web-Demo.cmd -Live` to open the real SUMO and PyTorch demonstration on port 8765. It shows four independent controllers, actual network inputs and outputs, and measured queue changes. The launcher supervises the live simulation server. The prepared presentation opens directly with Python and a browser.
 
-The live comparison uses completed trips at the current simulation time. Its result is provisional while the simulation runs. The model chooses a green duration from 20, 30, 40, 50 and 60 seconds. The phase sequence determines the direction, and the existing safety logic can constrain the applied duration.
+In the tested Heavy west rollout, the original demo DQN selected 20 seconds in all 84 decisions and A2C selected 30 seconds in all 62 decisions. See `policy-diagnosis.md` for the checkpoint investigation. The recorded runs use these original demo checkpoints, while the report-reference column can display the later experimental comparison.
 
-## Model behavior
+Run `.venv\Scripts\python.exe check_web_demo.py --scenario "Heavy west" --steps 180` to check the live runtime.
 
-These are the checkpoints used by the verified local demonstration. In the tested Heavy west seed 201 rollout, DQN selected 20 seconds in all 84 decisions and A2C selected 30 seconds in all 62 decisions. The explanation view exposes real scores and observed action counts. See [the policy investigation](policy-diagnosis.md) for the direct-network tests and training limitations.
-
-These checkpoint files are provided for inference and inspection. The package's hash inventory records the supplied runtime files. Historical training-machine provenance remains unresolved.
-
-## Verification
-
-After setup, run the following commands from this folder.
-
-```powershell
-.venv\Scripts\python.exe check_web_demo.py --scenario "Heavy west" --steps 180
-.venv\Scripts\python.exe web_demo.py --port 8766 --scenario "Heavy west" --no-browser
-```
-
-The integration check compares actual model inputs and outputs, directional queues, end-of-green measurements and completed-trip waiting metrics against SUMO. It also injects a simulation failure and checks recovery. The expected injected-error traceback appears during that recovery check.
-
-The main launcher uses port 8765. Choose an unused port for a separate command-line test. `demo-verification.json` and `heavy-west-soak-report.json` record the prior local checks. The archive is also tested after extraction before release.
-
-## Runtime environment
-
-The verified development environment used Python 3.11, CPU PyTorch 2.15.0, NumPy 2.4.4, Pillow 12.1.1 and SUMO Python tools 1.27.0. `requirements.txt` installs compatible current packages. The source repository's original historical environment remains documented in its root README.
+Run `python check_presentation.py` to check the prepared assets, all six recordings and the isolated server. Run `node check_presentation_timing.js` for the ten-minute timing and final-frame regression check. To rebuild the report data, pass the report and network paths to `build_presentation_data.py`. With simulation dependencies installed, `python record_presentation.py` regenerates the six recordings offline.
 
 ## Patch notes
 
-2026-11-16 â€” Added the packaged four-controller live demonstration with trained inference checkpoints, seed-201 demand, Windows setup and supervised launch scripts. Included saved decision explanations, end-of-green measurements, policy diagnosis and verification evidence.
+2026-11-16 — Added a prepared presentation mode with 48 exact report cells, six scenarios, two named experiments, illustrative road animation and archived model decision examples. The default launcher opens this standard-library mode, and the live simulation remains available through `-Live`.
+
+2026-11-17 — Replaced the illustrative two-minute animation with six ten-minute recordings of actual four-controller SUMO runs, including changing metrics and decision inputs. Restored full-network navigation, added enlarged maps and retained the final playback frame until an explicit restart.

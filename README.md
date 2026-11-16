@@ -62,12 +62,14 @@ Results, checkpoints and raw evidence were archived separately in the [project r
 Before publication, copied source hashes were checked, the source archive passed CRC and content-hash checks, and every published Python file was parsed for syntax. No new training or simulation was launched as part of publication. The inventory files allow readers to check the exact source files; they do not certify model quality or resolve documented experimental limitations.
 
 
-## Packaged live demonstration
+## Packaged project demonstration
 
-The [live demonstration](live-demo/README.md) contains the browser UI, four real SUMO controllers, trained inference checkpoints, seed-201 demand inputs, Windows setup and supervised launch scripts. Extract the release ZIP, follow its setup steps and run `Start-Web-Demo.cmd`. The live-demo runtime is self-contained under `live-demo/sim/`; the original root `sim/` source snapshot remains the published campaign source.
+The [project demonstration](live-demo/README.md) opens ten-minute recorded SUMO playback by default through `Start-Web-Demo.cmd`. Six scenarios include all four controllers, moving vehicles, signals, actual decision inputs, changing queues, completed-trip waiting metrics and an evolving comparison chart. Playback defaults to 1x, supports full-network and enlarged-map views, and retains the last frame until an explicit restart.
 
-The demo exposes actual model inputs, network scores, chosen and applied green durations, and directional queue measurements at the end of a selected green. The Heavy west checkpoints have constant greedy preferences in the tested rollout, as documented in the included policy investigation.
+The report-reference column displays 48 exact waiting-time cells from v23 tables 12 and 24, with a named experiment selector. The recording's current seed-201 metrics and the report's full experimental results have separate labels. The playback server uses Python's standard library. The package also includes live simulation, inference checkpoints and seed-201 demand, available with `Start-Web-Demo.cmd -Live` after dependency setup.
 
 ## Patch notes
 
 2026-11-16 — Added the packaged four-controller SUMO browser demonstration with twelve trained inference checkpoints and seed-201 demand files. Included Windows setup, supervised launch, decision history, end-of-green measurements and verification evidence.
+
+2026-11-17 — Made ten-minute recorded SUMO playback the default demo, with six scenarios, four controllers, changing metrics and actual model decision inputs. Restored full-network views, added enlarged maps and retained 48 exact report values in a separate reference column.

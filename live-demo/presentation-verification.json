@@ -1,0 +1,43 @@
+{
+  "report": "traffic-ai-final-report-v23.docx",
+  "source_tables": [
+    12,
+    24
+  ],
+  "default_report_reference": "4.8.1 / table 24",
+  "report_cells_verified": 48,
+  "recorded_scenarios": 6,
+  "recorded_duration_seconds_each": 600,
+  "frames_per_scenario": 601,
+  "recorded_controllers": [
+    "TIMER",
+    "SCRIPT",
+    "DQN",
+    "A2C"
+  ],
+  "playback": "actual recorded SUMO states, linearly interpolated vehicle positions",
+  "default_speed": 1,
+  "continuous_browser_test": {
+    "simulation_seconds": 600,
+    "speed": 10,
+    "end_time": "10:00",
+    "automatic_reset": false,
+    "console_errors": 0
+  },
+  "scenario_switching_all_six": true,
+  "full_network_and_enlarged_map": true,
+  "directional_inputs_and_end_of_green_queues": true,
+  "isolated_stdlib_server": true,
+  "concurrent_http_requests_passed": 40,
+  "desktop_no_scroll": [
+    [
+      1707,
+      870
+    ],
+    [
+      1280,
+      720
+    ]
+  ],
+  "timing_regression": "1x passes 10s, reaches 600s and retains final frame"
+}

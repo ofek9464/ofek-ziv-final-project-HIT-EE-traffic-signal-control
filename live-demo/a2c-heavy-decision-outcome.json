@@ -1,0 +1,5159 @@
+{
+  "before": {
+    "status": "paused",
+    "time": 118,
+    "error": null,
+    "scenario": "Heavy west",
+    "seed": 201,
+    "duration": 1200,
+    "speed": 4,
+    "actions": [
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "runs": [
+      {
+        "name": "DQN",
+        "decisions": {
+          "B1": [
+            {
+              "id": 20,
+              "time": 117.0,
+              "junction": "B1",
+              "phase": 0,
+              "state": {
+                "intersection_id": "B1",
+                "current_phase": 0,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 7,
+                    "average_speed": 9.335694005054025
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 10.131153610947406
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": false,
+                  "waiting_count": 0,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.699999988079071,
+                0.0,
+                0.01666666753590107,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scores": [
+                -116949.296875,
+                -130606.5625,
+                -137873.5625,
+                -153141.546875,
+                -166601.546875
+              ],
+              "score_type": "Q-value",
+              "critic": null,
+              "chosen": 20,
+              "applied": 20.0,
+              "override": false,
+              "selected": 0
+            }
+          ],
+          "C1": [
+            {
+              "id": 21,
+              "time": 117.0,
+              "junction": "C1",
+              "phase": 0,
+              "state": {
+                "intersection_id": "C1",
+                "current_phase": 0,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 12,
+                    "average_speed": 8.638787081921842
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 11.800830959645243
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 14.074043011603816
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": true,
+                  "waiting_count": 1,
+                  "average_waiting_time": 3.0,
+                  "max_waiting_time": 3.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.10000000149011612,
+                1.2000000476837158,
+                0.0,
+                0.01666666753590107,
+                0.0,
+                0.10000000149011612,
+                0.05000000074505806
+              ],
+              "scores": [
+                -131343.0,
+                -145837.234375,
+                -153674.109375,
+                -170427.703125,
+                -185263.546875
+              ],
+              "score_type": "Q-value",
+              "critic": null,
+              "chosen": 20,
+              "applied": 20.0,
+              "override": false,
+              "selected": 0
+            }
+          ]
+        },
+        "vehicles": [
+          {
+            "id": "3",
+            "position": [
+              301.6,
+              288.5989614708706
+            ],
+            "angle": 0.0,
+            "speed": 0.0
+          },
+          {
+            "id": "4",
+            "position": [
+              431.09777919259295,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "6",
+            "position": [
+              164.46351666722154,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 6.18126964680185
+          },
+          {
+            "id": "7",
+            "position": [
+              148.7651291908118,
+              142.15590433568258
+            ],
+            "angle": 198.52431890054186,
+            "speed": 4.917519756790399
+          },
+          {
+            "id": "heavy_west.22",
+            "position": [
+              423.54652400854485,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.06033141058505064
+          },
+          {
+            "id": "heavy_west.23",
+            "position": [
+              438.81250727631283,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.22138471348863
+          },
+          {
+            "id": "9",
+            "position": [
+              148.4,
+              11.40144985421415
+            ],
+            "angle": 180.0,
+            "speed": 0.007542943348983772
+          },
+          {
+            "id": "heavy_west.24",
+            "position": [
+              410.8563124049144,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.734997107409315
+          },
+          {
+            "id": "8",
+            "position": [
+              11.407347551843515,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.015457020758656369
+          },
+          {
+            "id": "10",
+            "position": [
+              300.9386558115737,
+              144.22009461210467
+            ],
+            "angle": 352.39527253176664,
+            "speed": 4.133868133812212
+          },
+          {
+            "id": "heavy_west.25",
+            "position": [
+              415.92831229945716,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.7587310181667154
+          },
+          {
+            "id": "heavy_west.26",
+            "position": [
+              388.5799978020418,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.69192776672151
+          },
+          {
+            "id": "heavy_west.27",
+            "position": [
+              405.8166025897491,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.667896417681833
+          },
+          {
+            "id": "heavy_west.28",
+            "position": [
+              366.9698264690239,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.611410713023677
+          },
+          {
+            "id": "heavy_west.29",
+            "position": [
+              390.66258757316876,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 7.413837674002228
+          },
+          {
+            "id": "heavy_west.30",
+            "position": [
+              288.39068502570865,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.6541602491109861
+          },
+          {
+            "id": "heavy_west.31",
+            "position": [
+              374.17585131402274,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.372141882910698
+          },
+          {
+            "id": "heavy_west.32",
+            "position": [
+              279.35042699656555,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 1.8945971386383227
+          },
+          {
+            "id": "heavy_west.33",
+            "position": [
+              352.42899374850145,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.139806513643096
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              288.59891298089025,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.14159611173654937
+          },
+          {
+            "id": "13",
+            "position": [
+              157.35852068936381,
+              144.49511241361827
+            ],
+            "angle": 31.107598853809797,
+            "speed": 4.4422961594376185
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              265.9844799760349,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 6.7206432855350595
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              280.4639996782454,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.8560796604383669
+          },
+          {
+            "id": "14",
+            "position": [
+              298.4,
+              11.40128719261594
+            ],
+            "angle": 180.0,
+            "speed": 0.00040469250812994926
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              249.81307548414424,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.786020539609831
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              269.36241492973534,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 6.097956941084341
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              253.87404300050116,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.988519674849915
+          },
+          {
+            "id": "15",
+            "position": [
+              301.6,
+              160.56673424660903
+            ],
+            "angle": 89.9378968922383,
+            "speed": 3.296734246609024
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              229.3101805115931,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.905812725682196
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              234.40380462723402,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.635306683813944
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              207.7438915545318,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.30478241146385
+          },
+          {
+            "id": "16",
+            "position": [
+              438.598992161804,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.00011607734518411966
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              138.5904957462507,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.057413887735977616
+          },
+          {
+            "id": "17",
+            "position": [
+              26.100660524219442,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 8.200877409411126
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              210.77183307344666,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.415013820077498
+          },
+          {
+            "id": "18",
+            "position": [
+              304.8,
+              119.48263505210761
+            ],
+            "angle": 0.0,
+            "speed": 12.283527913410358
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              129.67613645783308,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.118881506295585
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              105.50593894917625,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 13.813127019744137
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              66.62834838691768,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.346717982652233
+          },
+          {
+            "id": "19",
+            "position": [
+              394.6507834466157,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 12.944643417777433
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              39.82641424820589,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.605254808168604
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              40.56587803372676,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.861092443913364
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              20.95421897384219,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.4542189738421865
+          },
+          {
+            "id": "heavy_west.51",
+            "position": [
+              15.5,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.28495473815133
+          }
+        ],
+        "pedestrians": [
+          [
+            92.24829602882693,
+            142.0
+          ],
+          [
+            140.56,
+            6.41522669389562
+          ],
+          [
+            143.28,
+            50.16748280304574
+          ],
+          [
+            306.71999999999997,
+            270.76996930379846
+          ],
+          [
+            71.28959610511455,
+            -8.0
+          ],
+          [
+            45.421172546543374,
+            142.0
+          ],
+          [
+            204.19736877328322,
+            142.0
+          ],
+          [
+            325.2435343298811,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            113.52096380406005
+          ],
+          [
+            12.11327207417224,
+            142.0
+          ],
+          [
+            316.6567759764078,
+            6.720000000000001
+          ],
+          [
+            435.9410249086281,
+            158.0
+          ],
+          [
+            291.36,
+            155.017563552311
+          ],
+          [
+            275.73206855932034,
+            292.0
+          ],
+          [
+            142.0,
+            192.68906392471808
+          ],
+          [
+            186.50661476034048,
+            158.0
+          ],
+          [
+            293.28000000000003,
+            69.62608232025019
+          ],
+          [
+            267.3836168973189,
+            8.0
+          ],
+          [
+            264.8342606049118,
+            158.0
+          ],
+          [
+            156.72,
+            119.71552244570485
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 19.0
+          },
+          "C1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 19.0
+          }
+        },
+        "completed": 28,
+        "queued": 1,
+        "waiting": 12.214285714285714
+      },
+      {
+        "name": "A2C",
+        "decisions": {
+          "B1": [
+            {
+              "id": 16,
+              "time": 118.0,
+              "junction": "B1",
+              "phase": 3,
+              "state": {
+                "intersection_id": "B1",
+                "current_phase": 3,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 14,
+                    "average_waiting_time": 14.0,
+                    "max_waiting_time": 35.0,
+                    "incoming_vehicles_30s": 3,
+                    "average_speed": 1.534305837877424
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 14.284470904724426
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": false,
+                  "waiting_count": 0,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.699999988079071,
+                0.0,
+                0.0,
+                0.0,
+                0.14000000059604645,
+                0.0,
+                0.0,
+                0.10000000149011612,
+                0.30000001192092896,
+                1.0,
+                0.01666666753590107,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scores": [
+                0.12014903128147125,
+                0.8619638681411743,
+                0.007766650058329105,
+                0.002526849275454879,
+                0.007593597751110792
+              ],
+              "score_type": "Probability",
+              "critic": -22.21820640563965,
+              "chosen": 30,
+              "applied": 30.0,
+              "override": false,
+              "selected": 1
+            }
+          ],
+          "C1": [
+            {
+              "id": 17,
+              "time": 118.0,
+              "junction": "C1",
+              "phase": 3,
+              "state": {
+                "intersection_id": "C1",
+                "current_phase": 3,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 7,
+                    "average_waiting_time": 25.75,
+                    "max_waiting_time": 33.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 1.2586145677021499
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 12.283527913410358
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 13.91766883985506
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": false,
+                  "waiting_count": 0,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.3499999940395355,
+                0.0,
+                0.0,
+                0.0,
+                0.2574999928474426,
+                0.0,
+                0.10000000149011612,
+                0.10000000149011612,
+                0.10000000149011612,
+                1.0,
+                0.01666666753590107,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scores": [
+                0.13841331005096436,
+                0.8350242972373962,
+                0.011317379772663116,
+                0.004060770850628614,
+                0.011184360831975937
+              ],
+              "score_type": "Probability",
+              "critic": -20.25794792175293,
+              "chosen": 30,
+              "applied": 30.0,
+              "override": false,
+              "selected": 1
+            }
+          ]
+        },
+        "vehicles": [
+          {
+            "id": "6",
+            "position": [
+              309.45293838899994,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 1.9480631592916327
+          },
+          {
+            "id": "7",
+            "position": [
+              159.45200633992192,
+              151.4642992946259
+            ],
+            "angle": 268.4423905322823,
+            "speed": 1.9586509484099226
+          },
+          {
+            "id": "8",
+            "position": [
+              159.8751827864204,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 1.525907638669014
+          },
+          {
+            "id": "heavy_west.21",
+            "position": [
+              290.0633907839365,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 1.4644108480773868
+          },
+          {
+            "id": "heavy_west.23",
+            "position": [
+              290.24926161714217,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.650335403182544
+          },
+          {
+            "id": "9",
+            "position": [
+              131.0979309699003,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.24",
+            "position": [
+              281.0978811764154,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "10",
+            "position": [
+              188.14103574158167,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 14.284470904724426
+          },
+          {
+            "id": "heavy_west.25",
+            "position": [
+              281.0978745446329,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.26",
+            "position": [
+              273.59686212284623,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.27",
+            "position": [
+              266.09577138379933,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.28",
+            "position": [
+              273.59686333182333,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.29",
+            "position": [
+              266.0958238574209,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.30",
+            "position": [
+              140.45240729936793,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 1.8534481059061365
+          },
+          {
+            "id": "heavy_west.31",
+            "position": [
+              123.59692265989705,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.32",
+            "position": [
+              140.1170102948656,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.5180985061451793
+          },
+          {
+            "id": "heavy_west.33",
+            "position": [
+              131.0978342995129,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              123.59677266607237,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "13",
+            "position": [
+              183.18684299774011,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.068916541617199
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              116.09591251966255,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              116.09572596527522,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "14",
+            "position": [
+              258.5947342341114,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              108.59482997160744,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              108.59470869058522,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              101.0936581784709,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "15",
+            "position": [
+              304.8,
+              288.4988559545269
+            ],
+            "angle": 0.0,
+            "speed": 0.3550099947545221
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              101.09378346401685,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "16",
+            "position": [
+              438.5989090094407,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              93.59264742216453,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              93.59272172146007,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              86.09171280052703,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "17",
+            "position": [
+              27.43109336519165,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 8.655536815716417
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              86.09163717142657,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.000990205701289169
+          },
+          {
+            "id": "18",
+            "position": [
+              304.8,
+              119.48263505210761
+            ],
+            "angle": 0.0,
+            "speed": 12.283527913410358
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              78.35690407858885,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.6718033050639188
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              61.36799454811694,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.064659200064783
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              35.90835934724481,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.26600890506131
+          },
+          {
+            "id": "19",
+            "position": [
+              394.1678393998632,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.91766883985506
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              26.805962122230575,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.944461609019205
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              19.495012055797915,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 3.9950120557979147
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              15.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.7431814768400619
+          }
+        ],
+        "pedestrians": [
+          [
+            92.69975257658949,
+            142.0
+          ],
+          [
+            140.56,
+            6.41522669389562
+          ],
+          [
+            143.28,
+            50.476354643691394
+          ],
+          [
+            306.71999999999997,
+            270.87560220012426
+          ],
+          [
+            70.34262592808975,
+            -8.0
+          ],
+          [
+            45.64692638974924,
+            142.0
+          ],
+          [
+            204.68348288122294,
+            142.0
+          ],
+          [
+            325.6040586953926,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            113.33742122235958
+          ],
+          [
+            12.11327207417224,
+            142.0
+          ],
+          [
+            316.6567759764078,
+            6.720000000000001
+          ],
+          [
+            435.9410249086281,
+            158.0
+          ],
+          [
+            294.982436447689,
+            158.0
+          ],
+          [
+            275.28561326256636,
+            292.0
+          ],
+          [
+            142.0,
+            192.69907267202626
+          ],
+          [
+            187.1396305984379,
+            158.0
+          ],
+          [
+            293.28000000000003,
+            69.69280913646315
+          ],
+          [
+            267.5895136569478,
+            8.0
+          ],
+          [
+            251.37065238006292,
+            158.0
+          ],
+          [
+            156.72,
+            110.21963422655828
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 30.0
+          },
+          "C1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 30.0
+          }
+        },
+        "completed": 30,
+        "queued": 21,
+        "waiting": 8.066666666666666
+      },
+      {
+        "name": "TIMER",
+        "decisions": {
+          "B1": [],
+          "C1": []
+        },
+        "vehicles": [
+          {
+            "id": "6",
+            "position": [
+              311.4010015476062,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "7",
+            "position": [
+              161.40101836458592,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "8",
+            "position": [
+              11.401008751373979,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "9",
+            "position": [
+              148.4,
+              11.401084954850774
+            ],
+            "angle": 180.0,
+            "speed": 0.0
+          },
+          {
+            "id": "10",
+            "position": [
+              187.82415405148348,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.79955242301799
+          },
+          {
+            "id": "heavy_west.26",
+            "position": [
+              288.59890996036523,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.27",
+            "position": [
+              281.0978868839037,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.29",
+            "position": [
+              288.5989363897308,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.30",
+            "position": [
+              273.59684350180214,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.32",
+            "position": [
+              281.0978596173286,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.31",
+            "position": [
+              273.5968509770746,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.33",
+            "position": [
+              266.09584127953804,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              258.5947334290563,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "13",
+            "position": [
+              182.87287845699592,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.083147016586572
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              138.5989956771132,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              138.59899757019866,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "14",
+            "position": [
+              266.0958013710568,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              131.09791250536708,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              123.5968936836054,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              131.09789638525416,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "15",
+            "position": [
+              304.8,
+              288.5566053731173
+            ],
+            "angle": 0.0,
+            "speed": 0.06116453575088711
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              116.09587615783427,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "16",
+            "position": [
+              438.5989317058536,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              123.59681522936765,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              116.09572157577007,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              108.59464941627519,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.00035557088249431085
+          },
+          {
+            "id": "17",
+            "position": [
+              27.43109336519165,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 8.655536815716417
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              108.5942315397453,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.000998443927400832
+          },
+          {
+            "id": "18",
+            "position": [
+              304.8,
+              119.48263505210761
+            ],
+            "angle": 0.0,
+            "speed": 12.283527913410358
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              95.81767910847303,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.927299592183243
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              62.11455468154619,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.6116000256649
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              36.45620895691932,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.786667761750733
+          },
+          {
+            "id": "19",
+            "position": [
+              394.1678393998632,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.91766883985506
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              27.614247610599286,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 6.0195167897401145
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              21.08056141770384,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 5.580561417703838
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              15.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.0034192056112525
+          }
+        ],
+        "pedestrians": [
+          [
+            92.58393700836363,
+            142.0
+          ],
+          [
+            140.56,
+            6.41522669389562
+          ],
+          [
+            143.28,
+            50.41451842825525
+          ],
+          [
+            307.35999999999996,
+            272.1376430433114
+          ],
+          [
+            70.31475831558973,
+            -8.0
+          ],
+          [
+            45.64240869471638,
+            142.0
+          ],
+          [
+            204.6773969978772,
+            142.0
+          ],
+          [
+            325.93892048416325,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            113.44006096546146
+          ],
+          [
+            12.27763012661803,
+            142.0
+          ],
+          [
+            316.6567759764078,
+            6.720000000000001
+          ],
+          [
+            435.9410249086281,
+            158.0
+          ],
+          [
+            291.36,
+            152.39486091538419
+          ],
+          [
+            275.2085109275542,
+            292.0
+          ],
+          [
+            142.0,
+            192.6199595109385
+          ],
+          [
+            187.08672914977504,
+            158.0
+          ],
+          [
+            293.28000000000003,
+            69.62263303425593
+          ],
+          [
+            267.5585801702698,
+            8.0
+          ],
+          [
+            267.81646657105256,
+            158.0
+          ],
+          [
+            156.72,
+            123.79692501009988
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 9.0
+          },
+          "C1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 9.0
+          }
+        },
+        "completed": 35,
+        "queued": 21,
+        "waiting": 10.771428571428572
+      },
+      {
+        "name": "SCRIPT",
+        "decisions": {
+          "B1": [],
+          "C1": []
+        },
+        "vehicles": [
+          {
+            "id": "3",
+            "position": [
+              288.59899828423204,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "4",
+            "position": [
+              281.09797999399336,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "6",
+            "position": [
+              311.4010162696933,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "7",
+            "position": [
+              235.50457839615774,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.522379387718143
+          },
+          {
+            "id": "8",
+            "position": [
+              161.40109042508942,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "9",
+            "position": [
+              148.4,
+              11.401031487863406
+            ],
+            "angle": 180.0,
+            "speed": 0.0
+          },
+          {
+            "id": "10",
+            "position": [
+              294.6205131875095,
+              150.88278383035578
+            ],
+            "angle": 302.08159457879106,
+            "speed": 0.02576514767486495
+          },
+          {
+            "id": "11",
+            "position": [
+              301.6,
+              279.32459111977835
+            ],
+            "angle": 0.0,
+            "speed": 12.841107200668194
+          },
+          {
+            "id": "heavy_west.33",
+            "position": [
+              138.59898460536422,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              138.59892314698516,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "13",
+            "position": [
+              183.61395595096909,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.732821527100004
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              131.09791851688504,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              131.09797540898293,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "14",
+            "position": [
+              298.4,
+              11.4010329827222
+            ],
+            "angle": 180.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              123.59683218206656,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              123.59687641954896,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              116.09580414095727,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "15",
+            "position": [
+              301.6,
+              230.60324380050864
+            ],
+            "angle": 0.0,
+            "speed": 14.62904944429478
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              116.09577912993234,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "16",
+            "position": [
+              438.59897975173476,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              108.59479129605643,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              108.59465314421179,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              101.0936030173619,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0008077272975746284
+          },
+          {
+            "id": "17",
+            "position": [
+              27.43109336519165,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 8.655536815716417
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              101.09365346847333,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "18",
+            "position": [
+              304.8,
+              119.48263505210761
+            ],
+            "angle": 0.0,
+            "speed": 12.283527913410358
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              92.28051076575565,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 4.362295716719977
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              77.20992768946915,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 10.25054420138541
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              46.63279110766256,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.785198357734378
+          },
+          {
+            "id": "19",
+            "position": [
+              393.9141177007213,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.17887220006337
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              26.442286008858552,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.386709351195476
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              27.590526912727448,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.0752622920056165
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              15.5,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 2.469284899306394
+          }
+        ],
+        "pedestrians": [
+          [
+            92.58393700836363,
+            142.0
+          ],
+          [
+            140.56,
+            6.4873823090084155
+          ],
+          [
+            143.28,
+            50.41451842825525
+          ],
+          [
+            307.35999999999996,
+            272.1376430433114
+          ],
+          [
+            70.31475831558973,
+            -8.0
+          ],
+          [
+            45.64240869471638,
+            142.0
+          ],
+          [
+            204.6773969978772,
+            142.0
+          ],
+          [
+            325.23974873617425,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            113.04220438206352
+          ],
+          [
+            12.443606325255654,
+            142.0
+          ],
+          [
+            316.79120152507494,
+            6.720000000000001
+          ],
+          [
+            435.7201513932666,
+            158.0
+          ],
+          [
+            291.36,
+            151.84825879662512
+          ],
+          [
+            275.2085109275542,
+            292.0
+          ],
+          [
+            142.0,
+            192.6199595109385
+          ],
+          [
+            187.08672914977504,
+            158.0
+          ],
+          [
+            293.28000000000003,
+            69.62263303425593
+          ],
+          [
+            267.5585801702698,
+            8.0
+          ],
+          [
+            287.8710146626116,
+            158.0
+          ],
+          [
+            156.72,
+            115.8354559809295
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 16.0
+          },
+          "C1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 38.0
+          }
+        },
+        "completed": 38,
+        "queued": 16,
+        "waiting": 2.3947368421052633
+      }
+    ],
+    "run_id": 16,
+    "history": [
+      {
+        "time": 1,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 15,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 31,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 40,
+        "waiting": {
+          "DQN": 0.0,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 46,
+        "waiting": {
+          "DQN": 0.0,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 56,
+        "waiting": {
+          "DQN": 6.25,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 64,
+        "waiting": {
+          "DQN": 4.7,
+          "A2C": 13.0,
+          "TIMER": 0.0,
+          "SCRIPT": 6.0
+        }
+      },
+      {
+        "time": 75,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 11.363636363636363,
+          "TIMER": 14.75,
+          "SCRIPT": 2.588235294117647
+        }
+      },
+      {
+        "time": 79,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 9.88888888888889,
+          "TIMER": 14.363636363636363,
+          "SCRIPT": 2.0952380952380953
+        }
+      },
+      {
+        "time": 85,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 8.695652173913043,
+          "TIMER": 14.555555555555555,
+          "SCRIPT": 1.8333333333333333
+        }
+      },
+      {
+        "time": 93,
+        "waiting": {
+          "DQN": 4.882352941176471,
+          "A2C": 8.10344827586207,
+          "TIMER": 12.48,
+          "SCRIPT": 1.6296296296296295
+        }
+      },
+      {
+        "time": 106,
+        "waiting": {
+          "DQN": 9.095238095238095,
+          "A2C": 8.10344827586207,
+          "TIMER": 9.818181818181818,
+          "SCRIPT": 2.2972972972972974
+        }
+      },
+      {
+        "time": 118,
+        "waiting": {
+          "DQN": 12.214285714285714,
+          "A2C": 8.066666666666666,
+          "TIMER": 10.771428571428572,
+          "SCRIPT": 2.3947368421052633
+        }
+      }
+    ],
+    "scenarios": [
+      "Heavy west",
+      "Balanced",
+      "Morning rush",
+      "Evening rush",
+      "Pedestrian heavy",
+      "Full day cycle",
+      "Night (day-cycle segment)"
+    ]
+  },
+  "after": {
+    "status": "paused",
+    "time": 157,
+    "error": null,
+    "scenario": "Heavy west",
+    "seed": 201,
+    "duration": 1200,
+    "speed": 4,
+    "actions": [
+      20,
+      30,
+      40,
+      50,
+      60
+    ],
+    "runs": [
+      {
+        "name": "DQN",
+        "decisions": {
+          "B1": [
+            {
+              "id": 24,
+              "time": 146.0,
+              "junction": "B1",
+              "phase": 3,
+              "state": {
+                "intersection_id": "B1",
+                "current_phase": 3,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 15,
+                    "average_waiting_time": 8.9,
+                    "max_waiting_time": 22.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 0.604545862457152
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 14.272704579123504
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": false,
+                  "waiting_count": 0,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.75,
+                0.0,
+                0.0,
+                0.0,
+                0.08900000154972076,
+                0.0,
+                0.10000000149011612,
+                0.0,
+                0.10000000149011612,
+                1.0,
+                0.01666666753590107,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scores": [
+                -114680.1171875,
+                -120471.65625,
+                -124671.7890625,
+                -136096.46875,
+                -146767.171875
+              ],
+              "score_type": "Q-value",
+              "critic": null,
+              "chosen": 20,
+              "applied": 20.0,
+              "override": false,
+              "selected": 0
+            }
+          ],
+          "C1": [
+            {
+              "id": 25,
+              "time": 146.0,
+              "junction": "C1",
+              "phase": 3,
+              "state": {
+                "intersection_id": "C1",
+                "current_phase": 3,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 12,
+                    "average_waiting_time": 21.333333333333332,
+                    "max_waiting_time": 26.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 13.740094019528039
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 1,
+                    "average_speed": 11.57995623473981
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 2,
+                    "average_speed": 11.070092142488315
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": false,
+                  "waiting_count": 0,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.6000000238418579,
+                0.0,
+                0.0,
+                0.0,
+                0.2133333384990692,
+                0.10000000149011612,
+                0.10000000149011612,
+                0.20000000298023224,
+                0.0,
+                1.0,
+                0.01666666753590107,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "scores": [
+                -121676.1171875,
+                -128203.578125,
+                -132807.21875,
+                -145107.3125,
+                -156556.203125
+              ],
+              "score_type": "Q-value",
+              "critic": null,
+              "chosen": 20,
+              "applied": 20.0,
+              "override": false,
+              "selected": 0
+            }
+          ]
+        },
+        "vehicles": [
+          {
+            "id": "6",
+            "position": [
+              154.8,
+              231.05530373759865
+            ],
+            "angle": 0.0,
+            "speed": 12.42619228288878
+          },
+          {
+            "id": "8",
+            "position": [
+              59.60539568621176,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 12.631385575270324
+          },
+          {
+            "id": "10",
+            "position": [
+              26.516140145969914,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 14.89341961131636
+          },
+          {
+            "id": "heavy_west.30",
+            "position": [
+              397.48620874370874,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.520156184752935
+          },
+          {
+            "id": "heavy_west.32",
+            "position": [
+              376.2477572902075,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.85978575949573
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              414.74957805456194,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 13.244656030071013
+          },
+          {
+            "id": "13",
+            "position": [
+              265.06356278552585,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.2907481413652455
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              352.6910474643725,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.32477808601986
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              390.9837423572691,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.450915853360936
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              331.07818143706254,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.461408760317848
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              359.35556410145443,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.707738880578095
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              335.56357516984485,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.091557677363923
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              306.90026428421015,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.120913465715992
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              313.34047534885207,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.710704002166693
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              283.44914425837544,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 9.378269796125894
+          },
+          {
+            "id": "16",
+            "position": [
+              215.37604216366583,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 12.560184293475062
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              242.94875800156888,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.155295945665053
+          },
+          {
+            "id": "17",
+            "position": [
+              288.598956090395,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              290.05962548801654,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.52898727547461
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              247.39157758060927,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.294244207331829
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              229.1657119441415,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.589121874620989
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              223.52747855360664,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.172170055157329
+          },
+          {
+            "id": "19",
+            "position": [
+              197.88908063650584,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 13.679657079613708
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              202.70739394339574,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.424177660281225
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              207.53017088725616,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 13.01006910945257
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              175.71087203846784,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.207121649905378
+          },
+          {
+            "id": "heavy_west.51",
+            "position": [
+              180.89274655140835,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.716773884908415
+          },
+          {
+            "id": "heavy_west.52",
+            "position": [
+              159.89626712505716,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.247232614414372
+          },
+          {
+            "id": "20",
+            "position": [
+              264.9858208052391,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 7.596517147280025
+          },
+          {
+            "id": "heavy_west.53",
+            "position": [
+              151.21728888753466,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 10.438041956849968
+          },
+          {
+            "id": "heavy_west.54",
+            "position": [
+              136.14039753480643,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 9.975535427174924
+          },
+          {
+            "id": "21",
+            "position": [
+              -1.6,
+              161.401040371641
+            ],
+            "angle": 180.0,
+            "speed": 0.0001302769347552498
+          },
+          {
+            "id": "heavy_west.55",
+            "position": [
+              130.1955011182541,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.27931087973437
+          },
+          {
+            "id": "heavy_west.56",
+            "position": [
+              116.56335940577111,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.099001149659903
+          },
+          {
+            "id": "heavy_west.57",
+            "position": [
+              112.67351058930174,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 6.206677549808717
+          },
+          {
+            "id": "heavy_west.58",
+            "position": [
+              99.78176918134949,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 5.640803485309748
+          },
+          {
+            "id": "22",
+            "position": [
+              4.8,
+              138.59896037868214
+            ],
+            "angle": 0.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.59",
+            "position": [
+              97.14957389119081,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 4.791412691822936
+          },
+          {
+            "id": "heavy_west.60",
+            "position": [
+              85.97608794145113,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 3.6925473757819747
+          },
+          {
+            "id": "heavy_west.61",
+            "position": [
+              83.57829681508828,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 2.067470011948861
+          },
+          {
+            "id": "heavy_west.62",
+            "position": [
+              73.56969929759032,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 1.9865500805661487
+          },
+          {
+            "id": "heavy_west.63",
+            "position": [
+              73.62583179576902,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.735241828572625
+          },
+          {
+            "id": "23",
+            "position": [
+              454.8,
+              138.5987172882964
+            ],
+            "angle": 0.0,
+            "speed": 0.002663777295988968
+          },
+          {
+            "id": "heavy_west.64",
+            "position": [
+              63.861865532617415,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.2239807766204034
+          },
+          {
+            "id": "24",
+            "position": [
+              161.40378205255004,
+              4.8
+            ],
+            "angle": 270.0,
+            "speed": 0.003416597031582034
+          },
+          {
+            "id": "heavy_west.65",
+            "position": [
+              56.12930281396645,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.048897046342365864
+          },
+          {
+            "id": "heavy_west.66",
+            "position": [
+              64.10516908422896,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.4874091310221563
+          },
+          {
+            "id": "heavy_west.67",
+            "position": [
+              48.41139830504926,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.2429271692201109
+          },
+          {
+            "id": "heavy_west.68",
+            "position": [
+              55.37273021534466,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.449448255274843
+          },
+          {
+            "id": "heavy_west.69",
+            "position": [
+              45.216411348220575,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 2.5099225730488675
+          },
+          {
+            "id": "25",
+            "position": [
+              227.73376574616617,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 11.874727323327527
+          },
+          {
+            "id": "heavy_west.70",
+            "position": [
+              35.0514090681138,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.573774579576106
+          },
+          {
+            "id": "heavy_west.71",
+            "position": [
+              33.962513506378265,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 6.028204371510468
+          },
+          {
+            "id": "heavy_west.72",
+            "position": [
+              20.072166153391407,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 4.572166153391409
+          },
+          {
+            "id": "heavy_west.73",
+            "position": [
+              19.877345903982707,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 4.37734590398271
+          }
+        ],
+        "pedestrians": [
+          [
+            142.35999999999999,
+            139.78478092510525
+          ],
+          [
+            156.78595646584276,
+            -7.783637656758799
+          ],
+          [
+            143.28,
+            103.78921178108595
+          ],
+          [
+            125.6412429159806,
+            -8.0
+          ],
+          [
+            99.89684184670567,
+            142.0
+          ],
+          [
+            256.5487605328423,
+            142.0
+          ],
+          [
+            374.0825106653794,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            56.35527741130741
+          ],
+          [
+            69.18157035073604,
+            142.0
+          ],
+          [
+            363.2628308466807,
+            6.720000000000001
+          ],
+          [
+            389.30452334014694,
+            158.0
+          ],
+          [
+            309.1353134089702,
+            142.20927740930313
+          ],
+          [
+            158.0,
+            183.7992208237282
+          ],
+          [
+            179.7555652795271,
+            306.71999999999997
+          ],
+          [
+            8.0,
+            32.38677046593525
+          ],
+          [
+            458.0,
+            31.32606376540206
+          ],
+          [
+            273.15825702103416,
+            8.0
+          ],
+          [
+            281.9565127479401,
+            158.0
+          ],
+          [
+            310.4,
+            143.28
+          ],
+          [
+            292.0,
+            255.3029035551369
+          ],
+          [
+            149.95532177689674,
+            157.36
+          ],
+          [
+            143.6877460805034,
+            158.64000000000001
+          ],
+          [
+            293.28000000000003,
+            116.73729536942868
+          ],
+          [
+            212.61183341713496,
+            8.0
+          ],
+          [
+            212.80044694139696,
+            158.0
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 9.0
+          },
+          "C1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 9.0
+          }
+        },
+        "completed": 45,
+        "queued": 1,
+        "waiting": 17.044444444444444
+      },
+      {
+        "name": "A2C",
+        "decisions": {
+          "B1": [
+            {
+              "id": 20,
+              "time": 157.0,
+              "junction": "B1",
+              "phase": 0,
+              "state": {
+                "intersection_id": "B1",
+                "current_phase": 0,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 1,
+                    "average_waiting_time": 0.18181818181818182,
+                    "max_waiting_time": 2.0,
+                    "incoming_vehicles_30s": 10,
+                    "average_speed": 8.97340665627375
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 2,
+                    "average_speed": 12.490323295574356
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": true,
+                  "waiting_count": 1,
+                  "average_waiting_time": 5.0,
+                  "max_waiting_time": 5.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.05000000074505806,
+                0.0,
+                0.0,
+                0.0,
+                0.001818181830458343,
+                0.0,
+                0.0,
+                0.20000000298023224,
+                1.0,
+                0.0,
+                0.01666666753590107,
+                0.0,
+                0.10000000149011612,
+                0.0833333358168602
+              ],
+              "scores": [
+                0.1370684951543808,
+                0.8293651342391968,
+                0.014110948890447617,
+                0.005581371486186981,
+                0.01387405302375555
+              ],
+              "score_type": "Probability",
+              "critic": -18.8997745513916,
+              "chosen": 30,
+              "applied": 30.0,
+              "override": false,
+              "selected": 1
+            }
+          ],
+          "C1": [
+            {
+              "id": 21,
+              "time": 157.0,
+              "junction": "C1",
+              "phase": 0,
+              "state": {
+                "intersection_id": "C1",
+                "current_phase": 0,
+                "phase_elapsed_time": 1.0,
+                "approaches": {
+                  "west": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 13,
+                    "average_speed": 7.962608244324503
+                  },
+                  "south": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "north": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  },
+                  "east": {
+                    "queue_length": 0,
+                    "average_waiting_time": 0.0,
+                    "max_waiting_time": 0.0,
+                    "incoming_vehicles_30s": 0,
+                    "average_speed": 0.0
+                  }
+                },
+                "downstream_status": {
+                  "road_to_other": "free"
+                },
+                "pedestrians": {
+                  "waiting": true,
+                  "waiting_count": 1,
+                  "average_waiting_time": 0.0,
+                  "max_waiting_time": 0.0
+                }
+              },
+              "vector": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.2999999523162842,
+                0.0,
+                0.01666666753590107,
+                0.0,
+                0.10000000149011612,
+                0.0
+              ],
+              "scores": [
+                0.12983854115009308,
+                0.8406491279602051,
+                0.012504305690526962,
+                0.0047761257737874985,
+                0.012231908738613129
+              ],
+              "score_type": "Probability",
+              "critic": -19.489412307739258,
+              "chosen": 30,
+              "applied": 30.0,
+              "override": false,
+              "selected": 1
+            }
+          ]
+        },
+        "vehicles": [
+          {
+            "id": "6",
+            "position": [
+              255.8062330660415,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 12.253801602058784
+          },
+          {
+            "id": "7",
+            "position": [
+              148.88108391408707,
+              142.9675873986095
+            ],
+            "angle": 202.3161250094415,
+            "speed": 5.877679651556537
+          },
+          {
+            "id": "8",
+            "position": [
+              61.651759097343174,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 12.042283058574467
+          },
+          {
+            "id": "10",
+            "position": [
+              43.85057849499386,
+              298.4
+            ],
+            "angle": 90.0,
+            "speed": 12.566357951834451
+          },
+          {
+            "id": "16",
+            "position": [
+              218.986763464876,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 13.105919267821186
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              427.3140058553993,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.314317122145946
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              395.7081001094708,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.344611992130869
+          },
+          {
+            "id": "17",
+            "position": [
+              288.59892945990134,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              404.71796956256685,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.99142776392298
+          },
+          {
+            "id": "18",
+            "position": [
+              304.93384163906273,
+              140.5368914734393
+            ],
+            "angle": 1.5363318844389027,
+            "speed": 1.9476623851573094
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              375.14797682178727,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.76380248945721
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              382.17016074800307,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 10.96630845746875
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              354.70971784107223,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.401473656772412
+          },
+          {
+            "id": "19",
+            "position": [
+              4.8,
+              192.71164635119587
+            ],
+            "angle": 0.0,
+            "speed": 11.555597787938103
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              362.2662879077419,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.00358838351733
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              334.47409280463285,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.45796222747356
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              344.2876101372392,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.39226813233725
+          },
+          {
+            "id": "heavy_west.51",
+            "position": [
+              288.48705106149555,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.12286542332765416
+          },
+          {
+            "id": "heavy_west.52",
+            "position": [
+              279.8132722705156,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 3.426244120929958
+          },
+          {
+            "id": "heavy_west.53",
+            "position": [
+              326.161733254074,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.975351021673028
+          },
+          {
+            "id": "heavy_west.54",
+            "position": [
+              287.68677010574527,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 1.1208488178516938
+          },
+          {
+            "id": "21",
+            "position": [
+              -1.6,
+              161.401040371641
+            ],
+            "angle": 180.0,
+            "speed": 0.0001302769347552498
+          },
+          {
+            "id": "heavy_west.55",
+            "position": [
+              277.03751276801387,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.147159751925172
+          },
+          {
+            "id": "heavy_west.56",
+            "position": [
+              266.7913734472453,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 6.900483081133728
+          },
+          {
+            "id": "heavy_west.57",
+            "position": [
+              262.13894751109035,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.112669280355497
+          },
+          {
+            "id": "heavy_west.58",
+            "position": [
+              248.21584637804426,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 9.650225591863974
+          },
+          {
+            "id": "22",
+            "position": [
+              4.8,
+              138.59898509001698
+            ],
+            "angle": 0.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.59",
+            "position": [
+              244.7805804445105,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.013420256834792
+          },
+          {
+            "id": "heavy_west.60",
+            "position": [
+              229.57512059134763,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.5388457195943
+          },
+          {
+            "id": "heavy_west.61",
+            "position": [
+              209.31596793668103,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 9.994660049699833
+          },
+          {
+            "id": "heavy_west.63",
+            "position": [
+              222.78292331824758,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.399765865766184
+          },
+          {
+            "id": "23",
+            "position": [
+              454.8,
+              138.5987172882964
+            ],
+            "angle": 0.0,
+            "speed": 0.002663777295988968
+          },
+          {
+            "id": "heavy_west.62",
+            "position": [
+              200.1826494855339,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.977437567222985
+          },
+          {
+            "id": "heavy_west.64",
+            "position": [
+              138.90159930937398,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "24",
+            "position": [
+              161.4165291078196,
+              4.8
+            ],
+            "angle": 270.0,
+            "speed": 0.03361907686492887
+          },
+          {
+            "id": "heavy_west.65",
+            "position": [
+              127.72215887797333,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.480373775202296
+          },
+          {
+            "id": "heavy_west.66",
+            "position": [
+              138.25796046823336,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 4.200250595570714
+          },
+          {
+            "id": "heavy_west.67",
+            "position": [
+              109.97353189831448,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.533257393008611
+          },
+          {
+            "id": "heavy_west.68",
+            "position": [
+              122.47492754350705,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 10.03353868171987
+          },
+          {
+            "id": "heavy_west.69",
+            "position": [
+              100.53322898274962,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.430914159424692
+          },
+          {
+            "id": "25",
+            "position": [
+              215.24970830491372,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 11.874727323327527
+          },
+          {
+            "id": "heavy_west.70",
+            "position": [
+              60.09275770121903,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.610752519196124
+          },
+          {
+            "id": "heavy_west.71",
+            "position": [
+              52.09462996762229,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.214866162484146
+          },
+          {
+            "id": "heavy_west.72",
+            "position": [
+              37.67282202901535,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.132292329269612
+          },
+          {
+            "id": "20",
+            "position": [
+              176.60928164971278,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.109281649712763
+          },
+          {
+            "id": "heavy_west.73",
+            "position": [
+              15.5,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.351335203335328
+          },
+          {
+            "id": "heavy_west.74",
+            "position": [
+              15.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 9.719892399799855
+          }
+        ],
+        "pedestrians": [
+          [
+            142.0,
+            137.4948676680344
+          ],
+          [
+            156.62189637729412,
+            -8.387397079829736
+          ],
+          [
+            143.28,
+            103.61544190534286
+          ],
+          [
+            124.80339563258786,
+            -8.0
+          ],
+          [
+            99.23910520562646,
+            142.0
+          ],
+          [
+            256.82742512049083,
+            142.0
+          ],
+          [
+            375.30580209604443,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            56.28629375062762
+          ],
+          [
+            68.59611963603035,
+            142.0
+          ],
+          [
+            363.1544957189854,
+            6.720000000000001
+          ],
+          [
+            389.1215870426943,
+            158.0
+          ],
+          [
+            308.0,
+            155.21020563114394
+          ],
+          [
+            159.28,
+            144.6886982543593
+          ],
+          [
+            180.14320891580178,
+            306.71999999999997
+          ],
+          [
+            8.0,
+            31.43841001501064
+          ],
+          [
+            458.0,
+            31.4234385102464
+          ],
+          [
+            273.3182938211559,
+            8.0
+          ],
+          [
+            281.70405994873437,
+            158.0
+          ],
+          [
+            310.4,
+            143.28
+          ],
+          [
+            292.0,
+            254.88359881321105
+          ],
+          [
+            143.5970303529636,
+            158.16
+          ],
+          [
+            141.5159198110271,
+            157.3624378471832
+          ],
+          [
+            293.28000000000003,
+            117.07048284467895
+          ],
+          [
+            213.6252413544791,
+            8.0
+          ],
+          [
+            198.1385501093732,
+            158.0
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 30.0
+          },
+          "C1": {
+            "state": "gGGggrrrrrgGGggrrrrrrGrG",
+            "phase": 0,
+            "remaining": 30.0
+          }
+        },
+        "completed": 54,
+        "queued": 1,
+        "waiting": 16.75925925925926
+      },
+      {
+        "name": "TIMER",
+        "decisions": {
+          "B1": [],
+          "C1": []
+        },
+        "vehicles": [
+          {
+            "id": "6",
+            "position": [
+              156.6683308595064,
+              155.91900148429613
+            ],
+            "angle": 283.2257977144684,
+            "speed": 0.0
+          },
+          {
+            "id": "7",
+            "position": [
+              155.54000590931207,
+              150.90431536201845
+            ],
+            "angle": 262.00152269277856,
+            "speed": 0.0
+          },
+          {
+            "id": "8",
+            "position": [
+              49.56429950384745,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 12.183417744271502
+          },
+          {
+            "id": "10",
+            "position": [
+              4.8,
+              243.41850750032543
+            ],
+            "angle": 0.0,
+            "speed": 15.127137055490213
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              413.3849425991004,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.180111244419635
+          },
+          {
+            "id": "13",
+            "position": [
+              295.2,
+              63.962426392751425
+            ],
+            "angle": 180.0,
+            "speed": 14.73398980888737
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              352.06768991767854,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.731761858522141
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              303.5945798047361,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 7.308984550707634
+          },
+          {
+            "id": "14",
+            "position": [
+              298.4,
+              11.43442290371749
+            ],
+            "angle": 180.0,
+            "speed": 4.372271185133374
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              331.9813567997363,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.18062062599233
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              310.53789100165864,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.453179704860036
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              286.261016291444,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 3.730422410085886
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              290.0276423673339,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.788356365067223
+          },
+          {
+            "id": "16",
+            "position": [
+              217.8453690568868,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 12.090775035393484
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              274.7889187773677,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 2.3748917697503336
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              264.65485221187095,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.8306973568699976
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              265.3374459388277,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.625939947206408
+          },
+          {
+            "id": "17",
+            "position": [
+              288.5989606236082,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              256.3228488911638,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.7172513435993162
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              243.49194070328545,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.616804742385074
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              247.10302612463272,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 3.405990435214362
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              222.95564475168294,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.82419433683859
+          },
+          {
+            "id": "19",
+            "position": [
+              162.99201903500872,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              234.88395530171863,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.477110817207201
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              201.5571975554772,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.593806840435054
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              216.74466307635407,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 10.119393479762945
+          },
+          {
+            "id": "heavy_west.51",
+            "position": [
+              181.03476042299073,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.252852637979338
+          },
+          {
+            "id": "heavy_west.52",
+            "position": [
+              156.0075548744898,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.600941597161421
+          },
+          {
+            "id": "20",
+            "position": [
+              301.6,
+              165.16416780483073
+            ],
+            "angle": 0.38242090420569513,
+            "speed": 5.873295641279489
+          },
+          {
+            "id": "heavy_west.53",
+            "position": [
+              190.57401618364972,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.247240168914892
+          },
+          {
+            "id": "heavy_west.54",
+            "position": [
+              165.39760823733,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.436668562399582
+          },
+          {
+            "id": "21",
+            "position": [
+              -1.6,
+              161.40103176716198
+            ],
+            "angle": 180.0,
+            "speed": 0.00010251078204570981
+          },
+          {
+            "id": "heavy_west.55",
+            "position": [
+              144.23219843895492,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.129089011678053
+          },
+          {
+            "id": "heavy_west.56",
+            "position": [
+              134.82983135542787,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.608512676905283
+          },
+          {
+            "id": "heavy_west.57",
+            "position": [
+              118.48125877030733,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.362151985846559
+          },
+          {
+            "id": "heavy_west.58",
+            "position": [
+              111.82221353696944,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.895756085589811
+          },
+          {
+            "id": "22",
+            "position": [
+              4.8,
+              138.59899781292413
+            ],
+            "angle": 0.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.59",
+            "position": [
+              91.37619780733827,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.917835633482259
+          },
+          {
+            "id": "heavy_west.60",
+            "position": [
+              91.45901753088637,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.824889715641573
+          },
+          {
+            "id": "heavy_west.61",
+            "position": [
+              71.67586062920671,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.679806084198604
+          },
+          {
+            "id": "heavy_west.63",
+            "position": [
+              67.97428923520236,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 7.90723626616172
+          },
+          {
+            "id": "23",
+            "position": [
+              454.8,
+              138.5987172882964
+            ],
+            "angle": 0.0,
+            "speed": 0.002663777295988968
+          },
+          {
+            "id": "heavy_west.62",
+            "position": [
+              54.988410090878816,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.618850500988983
+          },
+          {
+            "id": "heavy_west.64",
+            "position": [
+              51.40518389934847,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.633146864868604
+          },
+          {
+            "id": "24",
+            "position": [
+              161.4165291078196,
+              4.8
+            ],
+            "angle": 270.0,
+            "speed": 0.03361907686492887
+          },
+          {
+            "id": "heavy_west.65",
+            "position": [
+              38.12271782563886,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 4.690609668360861
+          },
+          {
+            "id": "heavy_west.66",
+            "position": [
+              37.63129251847975,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 3.8744272176678853
+          },
+          {
+            "id": "25",
+            "position": [
+              214.39864556555267,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 12.010131081405408
+          },
+          {
+            "id": "heavy_west.67",
+            "position": [
+              15.5,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.719737455280852
+          },
+          {
+            "id": "heavy_west.68",
+            "position": [
+              15.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.538959593605407
+          },
+          {
+            "id": "26",
+            "position": [
+              315.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.091325000000001
+          }
+        ],
+        "pedestrians": [
+          [
+            142.0,
+            139.48353857011088
+          ],
+          [
+            156.78595646584276,
+            -7.783637656758799
+          ],
+          [
+            143.28,
+            104.03624740629547
+          ],
+          [
+            124.9857576136998,
+            -8.0
+          ],
+          [
+            100.18074892617234,
+            142.0
+          ],
+          [
+            256.0908725172167,
+            142.0
+          ],
+          [
+            374.7778968196616,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            56.27437457270882
+          ],
+          [
+            68.91821685333444,
+            142.0
+          ],
+          [
+            363.3330925664865,
+            6.720000000000001
+          ],
+          [
+            389.30452334014694,
+            158.0
+          ],
+          [
+            322.2222632058845,
+            142.0
+          ],
+          [
+            158.0,
+            184.34721463259075
+          ],
+          [
+            179.8030554515301,
+            306.71999999999997
+          ],
+          [
+            8.0,
+            32.4119885577798
+          ],
+          [
+            458.0,
+            31.32606376540206
+          ],
+          [
+            272.843132983944,
+            8.0
+          ],
+          [
+            281.4558490017006,
+            158.0
+          ],
+          [
+            310.4,
+            143.28
+          ],
+          [
+            292.0,
+            255.8163163236723
+          ],
+          [
+            150.0056027633326,
+            158.0
+          ],
+          [
+            141.65225743347216,
+            157.49877546962827
+          ],
+          [
+            293.28000000000003,
+            116.73384608343441
+          ],
+          [
+            212.4645945714444,
+            8.0
+          ],
+          [
+            216.22232993626398,
+            158.0
+          ],
+          [
+            156.72,
+            78.99105381997103
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 15.0
+          },
+          "C1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 15.0
+          }
+        },
+        "completed": 45,
+        "queued": 1,
+        "waiting": 16.4
+      },
+      {
+        "name": "SCRIPT",
+        "decisions": {
+          "B1": [],
+          "C1": []
+        },
+        "vehicles": [
+          {
+            "id": "3",
+            "position": [
+              288.59899828423204,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "4",
+            "position": [
+              288.5989929442765,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "6",
+            "position": [
+              311.4010162696933,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "7",
+            "position": [
+              155.53999566536785,
+              150.9043138956474
+            ],
+            "angle": 262.0015058870237,
+            "speed": 0.0
+          },
+          {
+            "id": "8",
+            "position": [
+              17.6338939405899,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 11.636468888112853
+          },
+          {
+            "id": "10",
+            "position": [
+              93.28534139428938,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 14.755463291644165
+          },
+          {
+            "id": "heavy_west.33",
+            "position": [
+              273.25137961527827,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.7718104228359823
+          },
+          {
+            "id": "heavy_west.34",
+            "position": [
+              273.48460327497264,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 2.372937250279209
+          },
+          {
+            "id": "13",
+            "position": [
+              281.09797893604855,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.35",
+            "position": [
+              257.5306485302566,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.276243698877611
+          },
+          {
+            "id": "heavy_west.36",
+            "position": [
+              262.41721858686475,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 5.765006797910996
+          },
+          {
+            "id": "heavy_west.37",
+            "position": [
+              238.00340357221984,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.852954742064789
+          },
+          {
+            "id": "heavy_west.38",
+            "position": [
+              244.23098573374227,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.710838617902603
+          },
+          {
+            "id": "heavy_west.39",
+            "position": [
+              222.73007256889048,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 12.826926791608496
+          },
+          {
+            "id": "heavy_west.40",
+            "position": [
+              216.44345502413884,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 12.15579024156491
+          },
+          {
+            "id": "16",
+            "position": [
+              318.9021040832441,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.41",
+            "position": [
+              198.46468758671995,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.435656676101457
+          },
+          {
+            "id": "heavy_west.42",
+            "position": [
+              194.9747296791711,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 11.827779106708302
+          },
+          {
+            "id": "heavy_west.43",
+            "position": [
+              169.86029992364718,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.503182334897922
+          },
+          {
+            "id": "17",
+            "position": [
+              288.5989010690232,
+              295.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.44",
+            "position": [
+              175.80516283861988,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.319400875239502
+          },
+          {
+            "id": "heavy_west.45",
+            "position": [
+              150.66488945832685,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 10.799129191618684
+          },
+          {
+            "id": "heavy_west.46",
+            "position": [
+              152.7652671017345,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.529463184035883
+          },
+          {
+            "id": "heavy_west.47",
+            "position": [
+              129.78778413868844,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 9.034590066611775
+          },
+          {
+            "id": "19",
+            "position": [
+              311.40101345757216,
+              151.6
+            ],
+            "angle": 270.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.49",
+            "position": [
+              129.68316707731339,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 11.658680174586731
+          },
+          {
+            "id": "heavy_west.48",
+            "position": [
+              107.80869866938401,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 8.96823618203017
+          },
+          {
+            "id": "heavy_west.50",
+            "position": [
+              103.84464127653793,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 8.607207068087778
+          },
+          {
+            "id": "heavy_west.51",
+            "position": [
+              89.4102307496368,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 7.204073208180134
+          },
+          {
+            "id": "20",
+            "position": [
+              281.0979664855881,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.52",
+            "position": [
+              72.93582301124496,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 4.011710423595797
+          },
+          {
+            "id": "heavy_west.53",
+            "position": [
+              87.09202062581876,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 6.835688582385667
+          },
+          {
+            "id": "heavy_west.54",
+            "position": [
+              72.35847131100894,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 4.256071796228244
+          },
+          {
+            "id": "21",
+            "position": [
+              -1.6,
+              161.401040371641
+            ],
+            "angle": 180.0,
+            "speed": 0.0001302769347552498
+          },
+          {
+            "id": "heavy_west.55",
+            "position": [
+              59.821958561687886,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 2.871586887715064
+          },
+          {
+            "id": "heavy_west.56",
+            "position": [
+              60.66154462459034,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 2.9551162222777663
+          },
+          {
+            "id": "heavy_west.57",
+            "position": [
+              49.19251162903339,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.3745650447697619
+          },
+          {
+            "id": "heavy_west.58",
+            "position": [
+              49.85596391799713,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.9508316582157789
+          },
+          {
+            "id": "22",
+            "position": [
+              4.8,
+              138.59894151115554
+            ],
+            "angle": 0.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.59",
+            "position": [
+              41.27742691959319,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.1819621322765544
+          },
+          {
+            "id": "heavy_west.60",
+            "position": [
+              41.34187421545749,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.2015209272595602
+          },
+          {
+            "id": "heavy_west.61",
+            "position": [
+              33.6156524592039,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.031294728448531255
+          },
+          {
+            "id": "heavy_west.63",
+            "position": [
+              33.589631774993045,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.005303690589984556
+          },
+          {
+            "id": "23",
+            "position": [
+              454.8,
+              138.5987172882964
+            ],
+            "angle": 0.0,
+            "speed": 0.002663777295988968
+          },
+          {
+            "id": "heavy_west.62",
+            "position": [
+              26.08332049228045,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.64",
+            "position": [
+              26.08332711050918,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "24",
+            "position": [
+              161.40378205255004,
+              4.8
+            ],
+            "angle": 270.0,
+            "speed": 0.003416597031582034
+          },
+          {
+            "id": "heavy_west.65",
+            "position": [
+              18.58222839481316,
+              145.2
+            ],
+            "angle": 90.0,
+            "speed": 0.0
+          },
+          {
+            "id": "heavy_west.66",
+            "position": [
+              18.582267825775133,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 0.0004026226847024688
+          },
+          {
+            "id": "25",
+            "position": [
+              212.5291340660639,
+              154.8
+            ],
+            "angle": 270.0,
+            "speed": 11.813291589009888
+          },
+          {
+            "id": "26",
+            "position": [
+              315.5,
+              148.4
+            ],
+            "angle": 90.0,
+            "speed": 13.091325000000001
+          }
+        ],
+        "pedestrians": [
+          [
+            142.0,
+            139.5030181124349
+          ],
+          [
+            156.8816439276119,
+            -7.777941974510637
+          ],
+          [
+            143.28,
+            103.67382639345144
+          ],
+          [
+            124.86166971884072,
+            -8.0
+          ],
+          [
+            100.20566725865177,
+            142.0
+          ],
+          [
+            257.20872042697664,
+            142.0
+          ],
+          [
+            374.04653229358973,
+            292.0
+          ],
+          [
+            306.71999999999997,
+            55.72925142023831
+          ],
+          [
+            69.28941038858893,
+            142.0
+          ],
+          [
+            363.5224432244909,
+            6.720000000000001
+          ],
+          [
+            388.85264899706414,
+            158.0
+          ],
+          [
+            293.56149650798596,
+            141.35999999999999
+          ],
+          [
+            158.0,
+            183.957275641259
+          ],
+          [
+            179.96412811969856,
+            306.71999999999997
+          ],
+          [
+            8.0,
+            32.36959137651333
+          ],
+          [
+            458.0,
+            31.44950142996217
+          ],
+          [
+            273.24115655372924,
+            8.0
+          ],
+          [
+            281.9936513777118,
+            158.0
+          ],
+          [
+            310.4,
+            143.28
+          ],
+          [
+            292.0,
+            255.7725844456627
+          ],
+          [
+            149.85760112604083,
+            158.0
+          ],
+          [
+            141.35999999999999,
+            156.58522410627688
+          ],
+          [
+            293.28000000000003,
+            116.72208346453344
+          ],
+          [
+            212.68892703897308,
+            8.0
+          ],
+          [
+            235.94199581517216,
+            158.0
+          ]
+        ],
+        "lights": {
+          "B1": {
+            "state": "rrrrrgGGggrrrrrgGGggGrGr",
+            "phase": 3,
+            "remaining": 36.0
+          },
+          "C1": {
+            "state": "gGGggrrrrrgGGggrrrrrrrrr",
+            "phase": 1,
+            "remaining": 4.0
+          }
+        },
+        "completed": 43,
+        "queued": 13,
+        "waiting": 4.558139534883721
+      }
+    ],
+    "run_id": 16,
+    "history": [
+      {
+        "time": 1,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 15,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 31,
+        "waiting": {
+          "DQN": null,
+          "A2C": null,
+          "TIMER": null,
+          "SCRIPT": null
+        }
+      },
+      {
+        "time": 40,
+        "waiting": {
+          "DQN": 0.0,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 46,
+        "waiting": {
+          "DQN": 0.0,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 56,
+        "waiting": {
+          "DQN": 6.25,
+          "A2C": 0.0,
+          "TIMER": 0.0,
+          "SCRIPT": 0.0
+        }
+      },
+      {
+        "time": 64,
+        "waiting": {
+          "DQN": 4.7,
+          "A2C": 13.0,
+          "TIMER": 0.0,
+          "SCRIPT": 6.0
+        }
+      },
+      {
+        "time": 75,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 11.363636363636363,
+          "TIMER": 14.75,
+          "SCRIPT": 2.588235294117647
+        }
+      },
+      {
+        "time": 79,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 9.88888888888889,
+          "TIMER": 14.363636363636363,
+          "SCRIPT": 2.0952380952380953
+        }
+      },
+      {
+        "time": 85,
+        "waiting": {
+          "DQN": 4.266666666666667,
+          "A2C": 8.695652173913043,
+          "TIMER": 14.555555555555555,
+          "SCRIPT": 1.8333333333333333
+        }
+      },
+      {
+        "time": 93,
+        "waiting": {
+          "DQN": 4.882352941176471,
+          "A2C": 8.10344827586207,
+          "TIMER": 12.48,
+          "SCRIPT": 1.6296296296296295
+        }
+      },
+      {
+        "time": 106,
+        "waiting": {
+          "DQN": 9.095238095238095,
+          "A2C": 8.10344827586207,
+          "TIMER": 9.818181818181818,
+          "SCRIPT": 2.2972972972972974
+        }
+      },
+      {
+        "time": 118,
+        "waiting": {
+          "DQN": 12.214285714285714,
+          "A2C": 8.066666666666666,
+          "TIMER": 10.771428571428572,
+          "SCRIPT": 2.3947368421052633
+        }
+      },
+      {
+        "time": 128,
+        "waiting": {
+          "DQN": 13.181818181818182,
+          "A2C": 8.066666666666666,
+          "TIMER": 10.771428571428572,
+          "SCRIPT": 3.0
+        }
+      },
+      {
+        "time": 139,
+        "waiting": {
+          "DQN": 13.722222222222221,
+          "A2C": 11.058823529411764,
+          "TIMER": 10.771428571428572,
+          "SCRIPT": 3.0
+        }
+      },
+      {
+        "time": 146,
+        "waiting": {
+          "DQN": 14.026315789473685,
+          "A2C": 13.65,
+          "TIMER": 10.771428571428572,
+          "SCRIPT": 3.0
+        }
+      },
+      {
+        "time": 155,
+        "waiting": {
+          "DQN": 17.044444444444444,
+          "A2C": 16.784313725490197,
+          "TIMER": 16.4,
+          "SCRIPT": 4.558139534883721
+        }
+      },
+      {
+        "time": 157,
+        "waiting": {
+          "DQN": 17.044444444444444,
+          "A2C": 16.75925925925926,
+          "TIMER": 16.4,
+          "SCRIPT": 4.558139534883721
+        }
+      }
+    ],
+    "scenarios": [
+      "Heavy west",
+      "Balanced",
+      "Morning rush",
+      "Evening rush",
+      "Pedestrian heavy",
+      "Full day cycle",
+      "Night (day-cycle segment)"
+    ]
+  }
+}

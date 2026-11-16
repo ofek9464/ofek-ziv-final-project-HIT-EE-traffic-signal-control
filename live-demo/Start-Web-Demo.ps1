@@ -1,6 +1,39 @@
-param([switch]$NoBrowser, [switch]$Serve)
+param([switch]$NoBrowser, [switch]$Serve, [switch]$Live)
 
 $ErrorActionPreference = 'Stop'
+if (-not $Live -and -not $Serve) {
+    $presentationUrl = 'http://127.0.0.1:8766'
+    $presentationReady = $false
+    try {
+        $response = Invoke-WebRequest "$presentationUrl/presentation-data.json" -UseBasicParsing -TimeoutSec 2
+        $presentationReady = $response.StatusCode -eq 200
+    }
+    catch { }
+    if (-not $presentationReady) {
+        $presentationPython = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
+        if (-not (Test-Path -LiteralPath $presentationPython)) {
+            $presentationPython = (Get-Command python.exe).Source
+        }
+        Start-Process -FilePath $presentationPython `
+            -ArgumentList '-u', 'presentation_server.py', '--no-browser' `
+            -WorkingDirectory $PSScriptRoot -WindowStyle Hidden `
+            -RedirectStandardOutput (Join-Path $PSScriptRoot 'presentation-server.log') `
+            -RedirectStandardError (Join-Path $PSScriptRoot 'presentation-errors.log') | Out-Null
+        for ($attempt = 0; $attempt -lt 30; $attempt++) {
+            try {
+                $response = Invoke-WebRequest "$presentationUrl/presentation-data.json" -UseBasicParsing -TimeoutSec 2
+                $presentationReady = $response.StatusCode -eq 200
+                if ($presentationReady) { break }
+            }
+            catch { }
+            Start-Sleep -Milliseconds 200
+        }
+    }
+    if (-not $presentationReady) { throw 'Prepared presentation could not start. See presentation-errors.log.' }
+    if (-not $NoBrowser) { Start-Process $presentationUrl }
+    Write-Output "Prepared project presentation is running at $presentationUrl"
+    return
+}
 $demoUrl = 'http://127.0.0.1:8765'
 $demoProcess = $null
 $pythonPath = Join-Path $PSScriptRoot '.venv\Scripts\python.exe'
